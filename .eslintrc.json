@@ -1,0 +1,117 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"amd": false,
+		"mocha": true,
+		"jasmine": false,
+		"phantomjs": false,
+		"jquery": false,
+		"prototypejs": false,
+		"shelljs": false
+	},
+	"extends": "eslint:recommended",
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"arrowFunctions": true,
+			"defaultParams": true,
+			"impliedStrict": true,
+			"jsx": false,
+			"modules": true
+		}
+	},
+	"rules": {
+		"arrow-parens": ["error","always"],
+		"arrow-spacing": ["error",{
+			"after": true,
+			"before": true
+		}],
+		"indent": ["error","tab",{
+			"ignoreComments": false,
+			"ObjectExpression": 1,
+			"SwitchCase": 1
+		}],
+		"key-spacing": ["error",{
+			"multiLine": {
+				"afterColon": true,
+				"beforeColon": false,
+				"mode": "strict"
+			},
+			"singleLine": {
+				"afterColon": false,
+				"beforeColon": false
+			}
+		}],
+		"keyword-spacing": ["error",{
+			"overrides": {
+				"case": {
+					"after": true,
+					"before": false
+				},
+				"catch": {
+					"after": false,
+					"before": false
+				},
+				"else": {
+					"after": false,
+					"before": false
+				},
+				"if": {
+					"after": false,
+					"before": false
+				},
+				"for": {
+					"after": false,
+					"before": false
+				},
+				"switch": {
+					"after": false,
+					"before": false
+				},
+				"try": {
+					"after": false,
+					"before": false
+				},
+				"while": {
+					"after": false,
+					"before": false
+				}
+			}
+		}],
+		"linebreak-style": ["error","unix"],
+		"quotes": ["error","single"],
+		"no-alert": "off",
+		"no-console": "off",
+		"no-irregular-whitespace": ["error",{
+			"skipComments": true,
+			"skipRegExps": true,
+			"skipStrings": true,
+			"skipTemplates": true
+		}],
+		"no-mixed-spaces-and-tabs": ["error"],
+		"no-multi-spaces": ["error",{
+			"ignoreEOLComments": false,
+			"exceptions": {
+				"BinaryExpression": false,
+				"ImportDeclaration": false,
+				"Property": true,
+				"VariableDeclarator": false
+			}
+		}],
+		"no-trailing-spaces": ["error",{
+			"ignoreComments": false,
+			"skipBlankLines": false
+		}],
+		"no-unused-vars": "error",
+		"semi": ["error","never"],
+		"space-before-blocks": ["error",{
+			"classes": "never",
+			"functions": "never",
+			"keywords": "never"
+		}]
+	}
+}

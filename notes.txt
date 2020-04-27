@@ -1,0 +1,12 @@
+Error Code:
+-----------
+
+100: Falla Endpoint de Watson
+
+200: Falla Endpoint de Omnibox
+201: Usuarios NO disponibles
+202: Salas NO disponibles
+203: Horario NO disponible
+204: NO se puede enviar conversación
+
+301: No se puede enviar mensaje del Customer

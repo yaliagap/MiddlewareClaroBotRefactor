@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Claro</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+	<link rel="icon" type="image/png" href="img/claro2.png" sizes="32x32" />
+	<link rel="stylesheet" type="text/css" href="css/chat.css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/socket.io.js"></script>
+</head>
+<style type="text/css">
+	img {
+    max-width: 100%;
+    max-height: 100%;
+	}
+</style>
+<body >
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-5 col-md-3">
+				<img src="/img/claro-logo.png">
+					
+			</div>
+			<div class="col-sm-12 col-md-7" style="padding-top: 20px;">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2 class="text-center">Proyecto Claro - Servicio de Soporte</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h2>Chatbot Peticiones Recurrente Negocio</h2>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-2">
+				<img style="padding-top: 20px;" src="/img/canvia-logo.png">
+			</div>
+			
+		</div>
+		<div class ="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="/img/tabla.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="/img/flujo-2.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-sm-12 -col-md-6 offset-md-3">
+						<div class="mainBot">
+							<button class="activarBot">Activa el Bot</button>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="demo-conversation" env="local" api-key="nhuamuhhq8lqLdLL" trigger="activarBot" onclick="startConversation()">
+		</div>
+	</div>
+	
+	<link rel="stylesheet" href="assistant/widget.css?v=1.5" />
+	<script src="assistant/widget.js?v=1.5"></script>
+	
+	
+	<!--
+	<link rel="stylesheet" href="https://clarosoportebot.mybluemix.net/assistant/widget.css" />
+	<script src="https://clarosoportebot.mybluemix.net/assistant/widget.js"></script>	
+	-->
+	</div>
+</body>
+</html>

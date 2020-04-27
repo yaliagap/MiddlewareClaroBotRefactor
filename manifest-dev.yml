@@ -1,0 +1,43 @@
+applications:
+- name: clarosoportebot
+  path: ./
+  buildpacks:
+  - sdk-for-nodejs
+  command: 'npm audit fix && npm start'
+  disk_quota: 1G
+  health-check-type: port
+  timeout: 60
+  instances: 1
+  memory: 256M
+  stack: cflinuxfs3
+  env:
+    NODE_ENV: 'dev'
+    NODE_PORT: '8080'
+
+    API_URL: 'https://clarosoportebot.mybluemix.net'
+    API_KEY_ASSISTANT_WEB: 'nhuamuhhq8lqLdLL'
+
+    ASSISTANT_USERNAME: 'apikey'
+    ASSISTANT_PASSWORD: 'vYGxvPw-sRphVIZbCOl9aOg_qxUzct61EdQ36M8NdWLG'
+    ASSISTANT_URL: 'https://gateway.watsonplatform.net/assistant/api'
+    ASSISTANT_VERSION: '2019-02-28'
+    WORKSPACE_ID: '21816db5-0fe8-4707-ac70-b29020e3ea58'
+
+    FB_API_URL: 'https://graph.facebook.com/v3.2'
+    FB_APP_SECRET: 'b75342d691560c7f5c3347ec1698399e'
+    FB_ACCESS_TOKEN: 'EAACdyNamTF0BAEuqzCiPhu19vhqwB7uWFwNXF3CowdDVVEW35IjDb5OfQfTZA30uZCn1JwYP2tzN82220ShXy1z8ZAGGTrA7FpIxZC2ZA5fN1CMdLkNhkEavwBbTTC3BNoqgoViqKolsMMtaROcuXag1i8AZCVWWgEY9VO1zxeTwZDZD'
+    FB_VERIFY_TOKEN: 'BOT_TOKEN'
+    FB_GET_PROPERTIES: 'false'
+    FB_ENABLE_PROPERTIES: 'false'
+    FB_DISABLE_PROPERTIES: 'false'
+    FB_NEW_CONVERSATION_ID_SECONDS: '300'
+
+    PG_DB: 'compose'
+    PG_USER: 'admin'
+    PG_PASS: 'JCLNCUGIHFUMRJQS'
+    PG_HOST: 'sl-us-south-1-portal.54.dblayer.com'
+    PG_PORT: '24563'
+    PG_SCHEMA: 'claro'
+
+    OFFSET: '-05:00'
+    OFFSET_UTC: '+05:00'
